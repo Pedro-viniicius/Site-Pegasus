@@ -1,0 +1,24 @@
+import '../styles/stylesButtonSaibaMais.css';
+import Vector from '../assets/Vector.png';
+
+export default function Saiba_Mais({ 
+  variant = "", 
+  iconVariant = Vector, 
+  titulo = "O que esse botao faz" 
+}) {
+  return (
+    <a 
+      className={`button_saibamais ${variant}`} 
+      href='/sobre-nos'  // Atualize para o caminho correto
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      {titulo}
+      <img 
+        src={iconVariant} 
+        alt="Seta" 
+        className="vector-icon"
+      />
+    </a>
+  );
+}
