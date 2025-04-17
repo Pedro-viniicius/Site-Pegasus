@@ -1,0 +1,33 @@
+/* stylesCabecalho.css */
+
+.navbar {
+    background-color: #000;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 53px; /* Aumenta o espaçamento horizontal */
+    height: 100px;
+  }
+  
+  
+  .logo {
+    height: 70px;
+    object-fit: contain;
+  }
+  
+  .menu-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .menu-button img {
+    width: auto;  
+    height: auto;
+}
+  

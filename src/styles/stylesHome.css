@@ -1,0 +1,597 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+.Home {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope', sans-serif;
+    width: 90%;                /* Aumentei a largura do conteúdo (era 80%) */
+    margin: 0 auto;            /* Centraliza com margens automáticas */
+    padding: 0px 5%;          /* Padding lateral reduzido (opcional) */
+    box-sizing: border-box;
+    min-height: 100vh;
+    overflow-wrap: break-word;
+}
+
+
+
+.sessao_um {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 65vh;
+    background: url('../assets/Banner02\ 1.png') no-repeat center;
+    background-size: cover;
+    padding-left: 15%;
+}
+
+.apresentacao {
+    max-width: 500px;
+    height: 55vh;
+}
+
+.apresentacao h1 {
+    font-size: 30.14px;
+    font-weight:100;
+    line-height: 1.2;
+    font-family: 'Manrope', sans-serif;
+}
+
+.apresentacao h5 {
+    font-size: 16px;
+    font-weight:100;
+    margin-top: 10px;
+    color: #ccc;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+.sessao_dois {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10%;
+    background-color: #F5F5F5;
+}
+
+.imagem-girocoptero {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagem-girocoptero img {
+    width: 90%;
+    border-radius: 10px;
+}
+
+.sobre_pegasus {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.sobre_pegasus h1 {
+    font-size: 14px;
+    font-weight: bold;
+    color: #C01E1E;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.sobre_pegasus h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.sobre_pegasus h3 {
+    font-size: 12px;
+    font-weight: normal;
+    color: #333;
+    line-height: 1.6;
+    font-family: 'Manrope', sans-serif;
+}
+
+.button_saiba_mais img {
+    width: 16px;
+    height: 16px;
+    margin-left: 8px;
+}
+.sessao_tres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5%;
+    background-color: #F5F5F5;
+    min-height: 50vh;
+}
+
+.projetos {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.textoArea {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 380px;
+    padding: 0;
+    margin: 0;
+}
+
+.imagensProjetos {
+    display: flex;
+    gap: 30px;
+}
+
+.imagensProjetos img {
+    width: 280px;
+    height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projetos h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #C01E1E;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.projetos h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0;
+    line-height: 1.3;
+    font-family: 'Manrope', sans-serif;
+}
+
+.projetos h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.projetos .button_saibamais {
+    margin-top: 10px;
+    align-self: flex-start;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.sessao_quatro {
+    background-color: #000;
+    padding: 150px 0;
+    width: 100%;
+
+  }
+  
+  .sessao_quatro .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .sessao_quatro .cards_wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+  }
+  
+  .sessao_quatro .card {
+    background: linear-gradient(to bottom, #f82026, #000000);
+    border-radius: 15px;
+    padding: 30px 20px;
+    text-align: center;
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .sessao_quatro .icon {
+    margin-bottom: 15px;
+  }
+  
+  .sessao_quatro .icon img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .sessao_quatro h3 {
+    color: #F5F5F5;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-family: 'Manrope', sans-serif;
+  }
+  
+  .sessao_quatro p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 250px;
+    font-family: 'Manrope', sans-serif;
+  }
+
+  .seessao_cinco {
+    position: relative;
+    background: #2a2a2a; /* Azul para preto */
+    padding: 60px 0; /* Ajuste conforme necessário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .seessao_cinco img {
+    width: 100%;
+    height: auto;
+    opacity: 0.7; /* Deixa a imagem em segundo plano */
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+.rodape {
+    background-color: #000;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container_rodape {
+    display: flex;
+    justify-content: flex-start; /* Alinha os itens no início */
+    align-items: flex-start;
+    gap: 100px; /* Define 20px de espaço entre cada item; ajuste conforme necessário */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 20px;
+}
+
+/* Logo */
+.logo img {
+    width: 100px; /* Ajuste conforme necessário */
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 0px;
+}
+
+.logo{
+    padding-right: 0px;
+}
+
+/* Contato */
+.contato, .nosso-site, .redes-sociais {
+    text-align: left;
+    max-width: 250px;
+}
+.contato {
+    color: #ffb800; /* Cor do título */
+    font-family: 'Manrope', sans-serif;
+    padding: 55px;
+    padding-top: 0;
+}
+
+.contato h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.contato-item {
+    display: flex;
+    align-items: flex-start; /* Alinhamento no topo */
+    gap: 10px; /* Espaçamento entre ícone e texto */
+    color: #ffffff; /* Cor do texto */
+    font-size: 14px;
+    margin-bottom: 8px; /* Espaço entre os itens */
+}
+
+.contato-item img {
+    width: 16px; /* Tamanho do ícone */
+    height: 16px;
+    margin-top: 3px; /* Ajuste fino para alinhamento vertical */
+}
+
+.contato-item p {
+    margin: 0; /* Remove margens padrão */
+    line-height: 1.4; /* Espaçamento entre linhas */
+}
+
+
+h3 {
+    color: #ffb800;
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* Links */
+.nosso-site ul {
+    list-style: none;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+.nosso-site ul li {
+    margin-bottom: 5px;
+    font-family: 'Manrope', sans-serif;
+}
+
+.nosso-site ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Manrope', sans-serif;
+}
+
+.nosso-site ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Redes Sociais */
+.icones {
+    display: flex;
+    gap: 10px;
+}
+
+.icones img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Copyright */
+.copyright {
+    background-color: #222;
+    padding: 10px 0;
+    margin-top: 20px;
+    font-size: 14px;
+    font-family: 'Manrope', sans-serif;
+}
+
+@media (max-width: 1440px) {
+    .sessao_um {
+        padding-left: 10%;
+        height: 60vh;
+    }
+    
+    .sessao_dois,
+    .sessao_tres {
+        padding: 10px 5%;
+    }
+    
+    .projetos {
+        gap: 60px;
+        padding-left: 30px;
+    }
+    
+    .sessao_quatro .cards_wrapper {
+        gap: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .Home {
+        width: 95%;
+        padding: 0 2.5%;
+    }
+    
+    .sessao_um {
+        height: 55vh;
+        padding-left: 7%;
+    }
+    
+    .apresentacao {
+        height: 50vh;
+    }
+    
+    .imagensProjetos img {
+        width: 240px;
+        height: 240px;
+    }
+    
+    .sessao_quatro .card {
+        width: 280px;
+        padding: 25px 15px;
+    }
+    
+    .container_rodape {
+        gap: 60px;
+        padding: 35px 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .sessao_um {
+        height: auto;
+        padding: 100px 5% 50px;
+        justify-content: center;
+    }
+    
+    .sessao_dois {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    
+    .imagem-girocoptero,
+    .sobre_pegasus {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .sobre_pegasus {
+        padding-left: 0;
+        margin-top: 30px;
+    }
+    
+    .projetos {
+        flex-direction: column;
+        gap: 40px;
+        padding-left: 0;
+    }
+    
+    .textoArea {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .imagensProjetos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .sessao_quatro .cards_wrapper {
+        gap: 40px;
+    }
+    
+    .container_rodape {
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+    }
+    
+    .logo img {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .apresentacao h1 {
+        font-size: 24px;
+    }
+    
+    .sobre_pegasus h2,
+    .projetos h2 {
+        font-size: 28px;
+    }
+    
+    .imagensProjetos img {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+    
+    .sessao_quatro {
+        padding: 100px 0;
+    }
+    
+    .sessao_quatro .card {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .container_rodape {
+        gap: 30px;
+        padding: 35px 20px;
+    }
+    
+    .contato {
+        padding: 0;
+    }
+    @media (max-width: 500px){
+        .Home {
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            font-family: 'Manrope', sans-serif;
+            width: 100vw;             /* Ocupa 100% da largura da viewport */
+            height: 100vh;            /* Ocupa 100% da altura da viewport */
+            margin: 0;                /* Remove margens padrão */
+            padding: 0;               /* Remove paddings padrão */
+            box-sizing: border-box;   /* Garante que padding não afete dimensões */
+
+        }
+        .sessao_um {
+           
+            height: 100vh; 
+            width: 100%;
+            padding: 50px 10px;/* 100% da altura da tela */
+
+            background-image: url('../assets/Banner\ PS.png'),url('../assets/BannerMobile.png');
+            background-position: top, bottom;  /* A primeira imagem ficará no topo, a segunda ficará na parte inferior */
+            background-repeat: no-repeat, no-repeat;  /* Nenhuma das imagens será repetida */
+            background-size: 100% 50%, 100% 60%;
+            
+            
+        }
+        .apresentacao {
+            max-width: 300px;
+            height: 110vh;
+            
+        }
+        .sessao_dois{
+            display: flex; 
+            flex-direction: column-reverse;
+            background-color: white;
+            width: 100%;
+            height: 190vh;
+            gap: 0px;
+        }
+
+        .sessao_tres{
+            display: flex; 
+            flex-direction: column;
+            background-color: white;
+            width: 100%;
+            height: 270vh;
+            justify-content:space-between;
+            align-items:end;
+            margin-left: 0; /* Remove margens laterais */
+            padding-left: 0;
+
+        }
+        .projetos{
+            width: 75%;
+            align-items: start;
+            margin-right: 60px;
+            margin-left: 0; /* Remove margens laterais */
+            padding-left: 0;
+        }
+        .textoArea{
+            text-align:left;
+            margin-left: 0; /* Remove margens laterais */
+            padding-left: 30px;
+            
+        }
+        .textoArea h1,
+        .textoArea h2,
+        .textoArea h3 {
+            margin:0; /* Remove margens padrão */
+            padding: 0;
+            width: 100%; /* Garante que ocupem a largura total */
+        }
+        .sessao_quatro{
+            display: flex; 
+            flex-direction: column;
+            background-color: rgb(0, 0, 0);
+            width: 100%;
+            height: 100vh;
+            gap: 0px;
+        }
+        .cards_wrapper{
+            width: 60%;
+        }
+
+
+    }
+}
