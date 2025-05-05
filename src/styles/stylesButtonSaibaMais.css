@@ -1,0 +1,43 @@
+/* Estilo padrão do botão */
+.button_saibamais {
+    display: inline-flex;
+    align-items: center;
+    background-color: #EABB38; /* Cor amarela padrão */
+    color: black;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: background 0.3s ease;
+    font-family: 'Manrope', sans-serif;
+    gap: 10px;
+}
+
+.button_saibamais:hover {
+    background-color: #b3861c;
+}
+
+/* Estilo alternativo para "Sobre a Pegasus" */
+.button_saibamais.pegasus {
+    background-color: transparent;
+    color: #ff2127;
+    border: 1px solid #ff2127;
+    font-size: 12px;
+    padding: 12px 24px;
+    font-family: 'Manrope', sans-serif;
+    gap: 10px;
+    font-weight: 300;
+    
+}
+
+.button_saibamais.pegasus:hover {
+    background-color: #c2191e;
+    color: white;
+}
+.Vector-icon {
+    width: 16px;  /* Ajuste conforme necessário */
+    height: 16px;
+    margin-left: 8px;
+}
+

@@ -1,0 +1,225 @@
+@media (max-width: 500px){
+    html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .Home {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: 'Manrope', sans-serif;
+        width: 100%;             
+        height: 3329px;          
+        margin: 0;                
+        padding: 0;               
+        box-sizing: border-box;   
+        max-width: 500px;
+    }
+    .conteudo-principal{
+        width: 100%;
+        margin: 0 auto; /* centraliza */
+        padding: 0; /* margem interna para não colar na borda */        
+    }
+    .cabecalho{
+        min-height: 60px;
+    }
+
+    .sessao_dois{
+        display:flex; 
+        background-color: white;
+        flex-direction:column;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        overflow: hidden; /* Garante que nada vaze */
+    }
+    .sobre_pegasus{
+        padding-left: 10%;
+        height: 100%;
+        width: 100%;
+        text-align:start;
+        max-width: 80%;
+    }
+    .sobre_pegasus h1{
+        padding: 0;
+        margin-top: 15%;
+        font-size: 14px;
+        font-weight: 300;
+        color: #ff2127;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        font-family: 'Manrope', sans-serif;
+    }
+    .sobre_pegasus h2{
+        padding: 0;
+        margin: 0;
+        font-size: 25.5px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 20px;
+        font-family: 'Manrope', sans-serif;
+    }
+    .imagem-girocoptero {
+        padding-bottom: 0;
+        padding-right: 0; /* Remova o padding que pode causar overflow */
+        margin: 0 auto; /* Centraliza a imagem */
+        height: auto; /* Ajusta a altura automaticamente */
+        max-width: 100%; /* Garante que a largura não ultrapasse o contêiner */
+        align-items: center;
+    }
+    .sessao_tres{
+        background-color: #ffffff;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        height: 185vh;
+
+    }
+    .projetos{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        padding: 0;
+        align-items: center;
+        height: 185vh;
+        max-height: 1000px;
+    }
+    .imagensProjetos{
+        display: flex;
+        flex-direction: column;
+        width: 326.061px;
+        height: 244.545px;
+        gap: 5em;
+    }
+    .imagensProjetos img{
+        width: 100%;
+        border-radius: 50px;
+    }
+    .textoArea{
+        padding: 0;
+        margin: 0;
+        text-align:start;
+    }
+    .textoArea h1{
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 300;
+        color: #ff2127;
+        margin-bottom: 2%;
+        font-family: 'Manrope', sans-serif;
+    }
+    .textoArea h2{
+        padding: 0;
+        margin: 0;
+        font-size: 35px;
+        font-weight: 700;
+        color: #000;
+        font-family: 'Manrope', sans-serif;
+    }
+    .textoArea h3{
+        padding: 0;
+        margin: 0;
+        font-size: 15px;
+        font-weight: 600;
+        color: #000;
+        font-family: 'Manrope', sans-serif;
+    }
+    .sessao_quatro{
+        display: flex; 
+        flex-direction: column;
+        background-color: rgb(0, 0, 0);
+        max-width:100%;
+        height: 170vh;
+        padding:0;
+    }
+    .cards_wrapper{
+        width: 60%;
+        max-width: 400px;
+        padding-top: 15%;
+        padding-left: 5em;
+    }
+    .seessao_cinco{
+        max-height: 41px;
+        padding: 0;
+        margin: 0;
+        background: #2a2a2a;
+    }
+    .seessao_cinco img{
+        min-height: 40px;
+    }
+    .rodape{
+        max-width:100%;
+        padding: 0;
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+        font-size:10px;
+    }
+    .container_rodape{
+        max-width:100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .conteiner-rodape-dois{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .footer-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;      /* centraliza cada um */
+        gap: 2em;
+        padding-right: 10%;
+        width: auto;
+      }
+    .contato-item{
+        font-size:10px;
+        width: 100%;
+        margin: 1em;;
+    }
+    .linha-topo{
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+    .redes-sociais{
+        padding-bottom: 2em;
+        font-size:17x;
+        
+    }
+    .contato{
+        padding: 0;
+    }
+
+    .logo img{
+        height: 100px;
+        width: 100px;
+        padding:0;
+    }
+
+    .copyright{
+        padding: 0;
+        margin:0;
+    }
+    .itens{
+        color: #af8c1b
+    }
+    .nosso-site ul {
+        display: flex; /* Certifique-se de que a lista usa flexbox */
+        flex-direction: column; /* Para listas verticais */
+        gap: 1em; /* Espaçamento entre os itens */
+        padding: 0;
+        margin: 0;
+    }
+
+}

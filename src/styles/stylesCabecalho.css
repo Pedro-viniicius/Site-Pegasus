@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#main-nav.navbar {
+    display: flex;
+    width: 100%;
+    background-color: transparent; 
+    padding: 1rem 0; 
+    margin: 0 auto;
+
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between; 
+    align-items: center; 
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 25%;
+    padding-right: 10%;
+    gap: 1.5em;
+    
+}
+
+.icones-container {
+    display: flex;
+    gap: 1em;
+    padding-right: 13.5em;
+    height: 1.1em;
+}
+
+.menu-container {
+    flex-grow: 1; 
+    text-align: center; 
+}
+
+.menu-list {
+    display: flex;
+    gap: 3.26em;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu-item {
+    margin: 0; 
+}
+
+.menu-link {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease; 
+    font-family: 'Manrope', sans-serif;
+}
+
+.link-home{
+    text-decoration: none;
+    color: #af8c2a; 
+    font-weight: 500;
+    font-size: 12px;
+    transition: color 0.3s ease; 
+    font-family: 'Manrope', sans-serif;
+}
+.link-home:hover{
+    color: #ff0000; 
+}
+.menu-link:hover {
+    color: #ff0000; 
+}
+
+.logo {
+    height: 75px;
+    width: 75px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.logo-mobile{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    margin: 0;
+}
+
+
+

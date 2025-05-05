@@ -1,0 +1,124 @@
+@media (max-width: 500px){
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Garante que não haja scroll horizontal */
+}
+
+.Home {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  font-family: 'Manrope', sans-serif;
+  width: 100%;
+  height: auto; /* Ajusta a altura para o conteúdo */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 500px; /* Limita a largura máxima */
+}
+.conteudo-principal {
+  width: 100%;
+  margin: 0 auto; /* Centraliza o conteúdo */
+  padding: 0; /* Remove a margem interna */
+}
+.hero-container {
+    background: url('../assets/BaneerMobile.svg') no-repeat center;
+    background-size: cover;
+    height: 115vh;
+    color: rgb(255, 255, 255);
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .main-nav{
+    width: 100%;
+    padding-top: 2%;
+    margin: 0;
+  }
+  .container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    gap: 4%;
+    justify-content:center;
+    padding-left: 5%;
+    
+  }
+  .apresentacao-container {
+    padding: 0;
+    height: auto;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  .apresentacao {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Manrope', sans-serif;
+    padding-left: 18%;
+    
+  }
+  .apresentacao h1 {
+    
+    padding-top: 25%;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 400;
+    color: #ffffff; 
+    font-family: 'Manrope', sans-serif;
+    width: 75%;
+  }
+  .apresentacao h5{
+    
+    padding-top: 2%;
+    padding-bottom: 3%;
+    margin: 0;
+    font-size: 50px;
+    font-weight: 100;
+    color: #ffffff; 
+    font-family: 'Manrope', sans-serif;
+  }
+  .menu-list {
+    list-style: disc; 
+    text-decoration: none;
+  }
+  .menu-item{
+    text-decoration: none;
+    
+  }
+  .logo{
+    width: 120px;
+    height:120px;
+  }
+
+  .menu_home{
+    text-decoration: none;
+    color: #af8c2a; 
+    font-weight: 500;
+    font-size: 15px;
+    transition: color 0.3s ease; 
+    font-family: 'Manrope', sans-serif;
+
+  }
+  .menu-item{
+    font-size: 15px;
+    font-family: 'Manrope', sans-serif;
+  }
+  .menu_home:hover{
+    color: #ff0000; 
+  }
+  .menu-link:hover {
+      color: #ff0000; 
+  }
+  .apresentacao h1{
+    font-size: 25px;
+  }
+  .apresentacao h5{
+    font-size: 12px;
+  }
+}
