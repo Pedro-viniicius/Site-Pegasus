@@ -17,6 +17,11 @@ html, body {
     --tamanho-fonte: 1rem;
   }
 
+  @media (min-width: 2529.330px){
+    :root{
+        --tamanho-fonte: 1.15rem;
+    }
+  }
 .SobreNos{
     background-color: var(--cor-fundo);
     color: var(--cor-fundo);
@@ -219,4 +224,3 @@ html, body {
     text-align:start;
     font-family: var(--font) ;
 }
-

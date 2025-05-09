@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+
+:root{
+    --cor-primaria: #FF2127;
+    --cor-secundaria: #F5F5F5;
+    --cor-texto: #000000;
+    --cor-fundo: #FFFFFF;
+    --font: 'Manrope', sans-serif;
+    --font-size-titulo:3em;
+    --font-size-link:0.5em;
+    --weight-titulo: 1000;
+    --weight-link: 400;
+    --gapEntreIconeEtexto: 5%;
+    --heightSectionDois: 80vh;
+    --margin-links:5%;
+
+  }
+  @media (min-width: 1520.8px) {
+    :root{
+        --font-size-titulo:3em;
+        --font-size-link:0.5em;
+        --weight-titulo: 1000;
+        --weight-link: 400;
+        --gapEntreIconeEtexto: 5%;
+        --heightSectionDois: 120vh;
+        --margin-links:5%;
+    }
+  }
+@media (min-width: 1680.89px) {
+    :root{
+        --font-size-titulo:3em;
+        --font-size-link:0.5em;
+        --weight-titulo: 1000;
+        --weight-link: 400;
+        --gapEntreIconeEtexto: 5%;
+        --heightSectionDois: 100vh;
+        --margin-links:5%;
+    }
+}
+@media (min-width: 2107.78px) {
+    :root{
+        --font-size-titulo:3em;
+        --font-size-link:0.5em;
+        --weight-titulo: 1000;
+        --weight-link: 400;
+        --gapEntreIconeEtexto: 5%;
+        --heightSectionDois: 80vh;
+        --margin-links:5%;
+    }
+}
+.conteudo-principal-contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contatos-section-um{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+    height: 25vh;
+}
+.contatos-section-dois{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height: var(--heightSectionDois);
+}
+.Contatos-texto ul{
+    list-style: none; /* Remove marcadores ou números */
+    margin: 0;         /* Remove margem padrão */
+    padding: 0;        /* Remove recuo interno */
+    font-size: var(--font-size-titulo);
+    font-weight: var(--weight-titulo);
+    font-family: var(--font);
+    width: 100%;
+
+}
+.Contatos-texto li{
+    margin-top: var(--margin-links);
+    margin-bottom: var(--margin-links);
+}
+.Contatos-texto p{
+    margin: 0%;
+    
+}
+.item-contatoss{
+    font-size: var(--font-size-link);
+    font-weight: var(--weight-link);
+    font-family: var(--font);
+    
+}
+.item-contatos{
+    text-decoration: none; /* Remove marcadores ou números */
+    display: flex;
+    flex-direction: row;
+    color: var(--cor-texto);
+    gap:var(--gapEntreIconeEtexto);
+    
+}
+p.titulo_contato{
+    margin: 0;
+    padding: 0;
+}
+
+a.item-ultimos{
+    text-decoration: none; /* Remove marcadores ou números */
+    display: flex;
+    flex-direction: row;
+    color: var(--cor-texto);
+    padding-top: 2%;
+}

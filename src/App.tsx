@@ -3,6 +3,8 @@ import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import SobreNos from './pages/SobreNos';
 import Servicos from './pages/Servicos';
+import Projetos from './pages/Projetos';
+import Contatos from './pages/Contatos';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +22,8 @@ const App: React.FC = () => {
         <Route path="/" element={<Home />} />
         <Route path="/SobreNos" element={<SobreNos />} />
         <Route path="/Servicos" element={<Servicos />} />
+        <Route path="/Projetos" element={<Projetos />} />
+        <Route path="/Contatos" element={<Contatos />} />
       </Routes>
     </div>
   );

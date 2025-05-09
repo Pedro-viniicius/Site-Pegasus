@@ -19,6 +19,7 @@ body, html {
     width: 100%;
     margin: 0 auto; /* centraliza */
     padding: 0; /* margem interna para não colar na borda */
+    box-sizing: border-box;
   }
 
 
@@ -39,22 +40,30 @@ body, html {
     justify-content: center;
     padding-right: 5%;
 }
+@media (min-width: 2529.330px){
+    .imagem-girocoptero{
+        padding-top: 6%;
+        padding-right: 2%;
+        
+    }
+
+}
 
 .imagem-girocoptero img {
     width: 90%;
     border-radius: 10px;
 }
-
 .sobre_pegasus {
-    width: 25%;
+    width: 30%;
     padding-right:25%;
     margin: 0;
 }
 
+
 .sobre_pegasus h1{
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: 300;
-    color: #C01E1E;
+    color: #FF2127;
     letter-spacing: 1px;
     margin: 0;
     padding-top: 15%;
@@ -62,7 +71,7 @@ body, html {
 }
 
 .sobre_pegasus h2 {
-    font-size: 30px;
+    font-size: 2.3em;
     font-weight: bold;
     color: #000;
     margin-bottom: 20px;
@@ -72,7 +81,7 @@ body, html {
 }
 
 .sobre_pegasus h3 {
-    font-size: 12px;
+    font-size: 1em;
     font-weight: normal;
     color: #333;
     line-height: 1.6;
@@ -128,9 +137,9 @@ body, html {
 }
 
 .projetos h1 {
-    font-size: 14px;
+    font-size: 1.2em;
     font-weight: 700;
-    color: #C01E1E;
+    color: #FF2127;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     margin: 0;
@@ -138,7 +147,7 @@ body, html {
 }
 
 .projetos h2 {
-    font-size: 32px;
+    font-size: 1.5em;
     font-weight: 700;
     color: #000000;
     margin: 0;
@@ -147,7 +156,7 @@ body, html {
 }
 
 .projetos h3 {
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
     color: #555555;
     line-height: 1.6;
@@ -288,11 +297,16 @@ body, html {
     display:flex;
     flex-direction:column-reverse;
     width: 10em;
-    height:11.5em;
+    height:12.5em;
     gap: 2em;
     padding: 0;
 }
+@media (min-width: 2529.33px) {
+    .footer-top{
+        height:11em;
+    }
 
+  }
 
 /* Logo */
 .logo img {
@@ -315,7 +329,7 @@ body, html {
 }
 
 .contato h3 {
-    font-size: 18px;
+    font-size: 1.5em;
     font-weight: bold;
     margin-bottom: 10px;
     font-family: 'Manrope', sans-serif;
@@ -326,7 +340,7 @@ body, html {
     align-items: flex-start; /* Alinhamento no topo */
     gap: 10px; /* Espaçamento entre ícone e texto */
     color: #ffffff; /* Cor do texto */
-    font-size: 14px;
+    font-size: 1em;
     margin-bottom: 8px; /* Espaço entre os itens */
 }
 
@@ -343,8 +357,8 @@ body, html {
 
 
 h3 {
-    color: #af8c1b;;
-    font-size: 18px;
+    color: #EABB38;;
+    font-size: 1.5em;
     margin-bottom: 10px;
     font-family: 'Manrope', sans-serif;
 }
@@ -354,6 +368,7 @@ h3 {
     list-style: none;
     padding: 0;
     font-family: 'Manrope', sans-serif;
+    font-size: 1em;
     
 }
 
@@ -385,9 +400,10 @@ h3 {
 /* Copyright */
 .copyright {
     background-color: #222;
+    color: #fff;
     padding: 10px 0;
     margin-top: 20px;
-    font-size: 14px;
+    font-size: 1.1em;
     font-family: 'Manrope', sans-serif;
 }
    

@@ -12,6 +12,7 @@ import tel from '../assets/bi_telephone-fill.svg';
 import whats from '../assets/whats.svg';
 import face from '../assets/facebook.svg';
 import insta from '../assets/instagram.svg';
+import { Link } from 'react-router-dom';
 
 export default function SobreNos() {
   return (
@@ -154,10 +155,10 @@ export default function SobreNos() {
                             <div className="nosso-site">
                                 <h3>Nosso Site</h3>
                                 <ul>
-                                    <li><a href="#" >Sobre nós</a></li>
-                                    <li><a href="#" >Serviços</a></li>
-                                    <li><a href="#" >Projetos</a></li>
-                                    <li><a href="#">Contato</a></li>
+                                <li> <Link to="/SobreNos" >Sobre nós</Link ></li>
+                                <li> <Link to="/Servicos" >Serviços</Link></li>
+                                <li> <Link to="/Projetos" >Projetos</Link></li>
+                                <li> <Link to="/Contatos">Contato</Link></li>
                                 </ul>
                             </div>
                         </div>

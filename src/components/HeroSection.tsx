@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import IconeFacebook from '../assets/facebook.svg';
 import IconeInsta from '../assets/instagram.svg';
 import IconeWhatsapp from '../assets/whats.svg';
-import logo from '../assets/LOGOTIPOVctor.svg';
-import logoMobile from '../assets/LOGOTIPOVctor.svg';
+import logo from '../assets/logo_sobre_nos.svg';
+import logoMobile from '../assets/LOGOTIPO_mobile.svg';
 import menuIcon from '../assets/menuMobile.svg';
 import Saiba_Mais from '../components/buttonSaibaMais';
 import '../styles/stylesCabecalho.css';
@@ -39,8 +39,8 @@ const HeroSection = () => {
                     <li className="menu-item"><Link to="/" className="menu_home" >HOME</Link></li>
                     <li className="menu-item"><Link to="/SobreNos"  className="menu-link"> SOBRE NÓS</Link></li> 
                     <li className="menu-item"><Link to="/Servicos" className="menu-link">SERVIÇOS</Link></li>
-                    <li className="menu-item"><a href="#" className="menu-link">PROJETOS</a></li>
-                    <li className="menu-item"><a href="#" className="menu-link">CONTATO</a></li>
+                    <li className="menu-item"><Link to="/Projetos"  className="menu-link">PROJETOS</Link></li>
+                    <li className="menu-item"><Link to="/Contatos" className="menu-link">CONTATO</Link></li>
                 </ul>
               <div className="icones-container">
                 <a href="https://www.facebook.com/sua_pagina" target="_blank" rel="noopener noreferrer">

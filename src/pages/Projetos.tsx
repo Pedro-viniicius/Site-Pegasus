@@ -1,9 +1,7 @@
 import HeroSection from "../components/HeroSection";
-import servicos_img from "../assets/Servicos-componet.svg";
-import '../styles/stylesServicos.css';
-import helice from "../assets/helice.svg";
-import manutencao from "../assets/manutencao.svg";
-import pecas_carro from "../assets/pecas_do_carro.svg";
+import projetos_img from "../assets/Component_projetos.svg";
+import "../styles/stylesProjetos.css";
+import gradeprojetos from "../assets/gradeprojetos.svg";
 import logo from '../assets/LOGOTIPO_roda_pe.svg';
 import email from '../assets/wpf_message.svg';
 import local from '../assets/mdi_location.svg';
@@ -13,97 +11,65 @@ import face from '../assets/facebook.svg';
 import insta from '../assets/instagram.svg';
 import { Link } from "react-router-dom";
 
-export default function Servicos() {
-    console.log("Servicos component rendered");
-  return (
+export default function Projetos(){
+    return(
+        <div className="Projetos">
+            <HeroSection />
+            <div className="conteudo-principal_projetos">
+                <section className="projetos-section-um">
+                    <div>
+                        <img src={projetos_img} alt="projetos_img" />
+                    </div>
+                </section>
 
-    <div className="Servicos">
-      <HeroSection/>
-      <div className="conteudo-principal-servicos">
-        <section className="servicos-section-um">
-          <div>
-            <img src={servicos_img} alt="servicos_img" />
-          </div>
-        </section>
-
-        <section className="servicos-section-dois">
-                <div className="imgServicos">
-                  <img src={helice} alt="helice" />
+                <section className="projetos-section-dois">
+                <div className="imgProjetos">
+                  <img src={gradeprojetos} alt="gradeprojetos" />
                 </div>
-                <div className="COMPRE_CONOSCO">
+                <div className="PROJETO_MALIBU">
                   <div>
-                    <h1 className="titulo_um_servicos">COMPRE CONOSCO</h1>
+                    <h1 className="titulo_um_projetos">PROJETO MALIBU</h1>
                   </div>
                   <div>
-                    <h2 className="sub_um_servicos">
-                    Venda de aeronaves
-                    de alto giro
+                    <h2 className="sub_um_projetos">
+                    Liberdade e
+                    performance
                     </h2>
                   </div>
-                  <div className="paragrafos_um_servicos">
+                  <div className="paragrafos_um_projetos">
                     <p>
-                    Trabalhamos com a comercialização de girocópteros de alto desempenho, ideais para quem busca segurança, 
-                    versatilidade e liberdade nos voos.
-                    </p>
-                    <p>
-                    Cada aeronave passa por uma criteriosa avaliação técnica, garantindo confiabilidade desde a decolagem até o pouso.
+                    O Projeto Malibu é a combinação perfeita entre inovação e eficiência no universo dos alto giros. 
+                    Desenvolvido para oferecer performance superior e estabilidade em voo, o Malibu traz design moderno, 
+                    tecnologia de ponta e componentes de alta qualidade. Um projeto pensado para quem busca novas 
+                    experiências nos céus com segurança e estilo.
                     </p>
                   </div>
                 </div>
               </section>
-
-              <section className="servicos-section-dois">
-                <div className="imgServicos">
-                  <img src={manutencao} alt="manutencao" />
+              <section className="projetos-section-doiss">
+                <div className="imgProjetos">
+                  <img src={gradeprojetos} alt="gradeprojetos" />
                 </div>
-                <div className="COMPRE_CONOSCO">
+                <div className="PROJETO_MALIBU">
                   <div>
-                    <h1 className="titulo_um_servicos">MANUTENÇÃO</h1>
+                    <h1 className="titulo_um_projetos">PROJETO ORION</h1>
                   </div>
                   <div>
-                    <h2 className="sub_um_servicos">
-                    Manutenção especializada
-                    em aeronaves
+                    <h2 className="sub_um_projetos">
+                    Precisão e
+                    potência
                     </h2>
                   </div>
-                  <div className="paragrafos_um_servicos">
+                  <div className="paragrafos_um_projetos">
                     <p>
-                    Oferecemos manutenção preventiva e corretiva para girocópteros, com equipe técnica qualificada e equipamentos de ponta.
-                    </p>
-                    <p>
-                    Da revisão de sistemas ao reparo de componentes, tudo é feito com precisão, 
-                    respeitando os mais altos padrões de segurança aeronáutica.
+                    Inspirado na leveza e na precisão do voo, o Projeto Orion nasce com o compromisso de redefinir o 
+                    padrão de girocópteros. Com estrutura reforçada, aerodinâmica otimizada e alta confiabilidade mecânica, 
+                    o Orion entrega desempenho excepcional em diferentes condições de operação. Um projeto criado para 
+                    pilotos exigentes que não abrem mão da excelência.
                     </p>
                   </div>
                 </div>
               </section>
-
-              <section className="servicos-section-dois">
-                <div className="imgServicos">
-                  <img src={pecas_carro} alt="pecas_carro" />
-                </div>
-                <div className="COMPRE_CONOSCO">
-                  <div>
-                    <h1 className="titulo_um_servicos">VENDA DE PEÇAS</h1>
-                  </div>
-                  <div>
-                    <h2 className="sub_um_servicos">
-                    Venda de peças para
-                    aeronaves
-                    </h2>
-                  </div>
-                  <div className="paragrafos_um_servicos">
-                    <p>
-                    Disponibilizamos uma linha completa de peças e componentes para girocópteros.
-                    </p>
-                    <p>
-                    Nossas peças são homologadas, garantindo a performance ideal da aeronave e a 
-                    tranquilidade de quem voa com responsabilidade.
-                    </p>
-                  </div>
-                </div>
-              </section>
-
               <footer className="rodape">
                 <div className="container_rodape">
                     
@@ -167,8 +133,7 @@ export default function Servicos() {
                     <p>© Copyright - 2025. Pegasus. Todos os direitos reservados.</p>
                 </div>
             </footer>
-
-      </div>
-    </div>
-  );
+            </div>
+        </div>
+    )
 }
