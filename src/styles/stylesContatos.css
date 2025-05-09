@@ -6,9 +6,9 @@
     --cor-texto: #000000;
     --cor-fundo: #FFFFFF;
     --font: 'Manrope', sans-serif;
-    --font-size-titulo:3em;
-    --font-size-link:0.5em;
-    --weight-titulo: 1000;
+    --font-size-titulo-contato:3em;
+    --font-size-link-contato:0.5em;
+    --weight-titulo-cotato: 1000;
     --weight-link: 400;
     --gapEntreIconeEtexto: 5%;
     --heightSectionDois: 80vh;
@@ -17,9 +17,9 @@
   }
   @media (min-width: 1520.8px) {
     :root{
-        --font-size-titulo:3em;
-        --font-size-link:0.5em;
-        --weight-titulo: 1000;
+        --font-size-titulo-contato:3em;
+        --font-size-link-contato:0.5em;
+        --weight-titulo-cotato: 1000;
         --weight-link: 400;
         --gapEntreIconeEtexto: 5%;
         --heightSectionDois: 120vh;
@@ -28,9 +28,9 @@
   }
 @media (min-width: 1680.89px) {
     :root{
-        --font-size-titulo:3em;
-        --font-size-link:0.5em;
-        --weight-titulo: 1000;
+        --font-size-titulo-contato:3em;
+        --font-size-link-contato:0.5em;
+        --weight-titulo-cotato: 1000;
         --weight-link: 400;
         --gapEntreIconeEtexto: 5%;
         --heightSectionDois: 100vh;
@@ -39,9 +39,9 @@
 }
 @media (min-width: 2107.78px) {
     :root{
-        --font-size-titulo:3em;
-        --font-size-link:0.5em;
-        --weight-titulo: 1000;
+        --font-size-titulo-contato:3em;
+        --font-size-link-contato:0.5em;
+        --weight-titulo-cotato: 1000;
         --weight-link: 400;
         --gapEntreIconeEtexto: 5%;
         --heightSectionDois: 80vh;
@@ -80,8 +80,8 @@
     list-style: none; /* Remove marcadores ou números */
     margin: 0;         /* Remove margem padrão */
     padding: 0;        /* Remove recuo interno */
-    font-size: var(--font-size-titulo);
-    font-weight: var(--weight-titulo);
+    font-size: var(--font-size-titulo-contato);
+    font-weight: var(--weight-titulo-cotato);
     font-family: var(--font);
     width: 100%;
 
@@ -95,7 +95,7 @@
     
 }
 .item-contatoss{
-    font-size: var(--font-size-link);
+    font-size: var(--font-size-link-contato);
     font-weight: var(--weight-link);
     font-family: var(--font);
     

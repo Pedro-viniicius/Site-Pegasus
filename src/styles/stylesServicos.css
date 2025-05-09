@@ -12,49 +12,49 @@ html, body {
     --cor-texto: #000000;
     --cor-fundo: #FFFFFF;
     --font: 'Manrope', sans-serif;
-    --font-size-titulo:1.3em;
-    --font-size-sub:3em;
-    --font-size-paragrafo:1.2em;
-    --font-weight-titulo: 400;
-    --font-weight-sub: 600; 
-    --font-weight-paragrafo: 200;
-    --height-section: 65vh;
+    --font-size-titulo-servicos:2em;
+    --font-size-sub-servicos:3em;
+    --font-size-paragrafo-servicos:1.2em;
+    --font-weight-titulo-servicos: 400;
+    --font-weight-sub-servicos: 600; 
+    --font-weight-paragrafo-servicos: 200;
+    --height-section-servicos: 65vh;
     --gap-entreimgetexto: 5%;
   }
 @media (min-width: 1520.8px) {
     :root{
-        --font-size-titulo:1em;
-        --font-size-sub:2.4em;
-        --font-size-paragrafo:1.2em;
-        --font-weight-titulo: 400;
-        --font-weight-sub: 600; 
-        --font-weight-paragrafo: 200;
-        --height-section: 80vh;
+        --font-size-titulo-servicos:1.5em;
+        --font-size-sub-servicos:2.8em;
+        --font-size-paragrafo-servicos:1.2em;
+        --font-weight-titulo-servicos: 400;
+        --font-weight-sub-servicos: 600; 
+        --font-weight-paragrafo-servicos: 200;
+        --height-section-servicos: 85vh;
         --gap-entreimgetexto: 5%;
     }
 }
 
 @media (min-width: 2017.07px) {
     :root{
-        --font-size-titulo:1.3em;
-        --font-size-sub:2.4em;
-        --font-size-paragrafo:1.2em;
-        --font-weight-titulo: 400;
-        --font-weight-sub: 600; 
-        --font-weight-paragrafo: 200;
-        --height-section: 55vh;
+        --font-size-titulo-servicos:1.3em;
+        --font-size-sub-servicos:2.4em;
+        --font-size-paragrafo-servicos:1.2em;
+        --font-weight-titulo-servicos: 400;
+        --font-weight-sub-servicos: 600; 
+        --font-weight-paragrafo-servicos: 200;
+        --height-section-servicos: 55vh;
         --gap-entreimgetexto: 5%;
     }
 }
 @media (min-width: 2529.33px) {
     :root{
-        --font-size-titulo:1.5em;
-        --font-size-sub:2.8em;
-        --font-size-paragrafo:1.6em;
-        --font-weight-titulo: 400;
-        --font-weight-sub: 600; 
-        --font-weight-paragrafo: 200;
-        --height-section: 45vh;
+        --font-size-titulo-servicos:1.5em;
+        --font-size-sub-servicos:2.8em;
+        --font-size-paragrafo-servicos:1.6em;
+        --font-weight-titulo-servicos: 400;
+        --font-weight-sub-servicos: 600; 
+        --font-weight-paragrafo-servicos: 200;
+        --height-section-servicos: 45vh;
         --gap-entreimgetexto: 5%;
     }
 
@@ -85,7 +85,7 @@ html, body {
     justify-content: center;
     align-items: center;
     gap:var(--gap-entreimgetexto);
-    height: var(--height-section);
+    height: var(--height-section-servicos);
 
 }
 .COMPRE_CONOSCO{
@@ -96,20 +96,20 @@ html, body {
 
 .titulo_um_servicos{
     font-family: var(--font);
-    font-size: var(--font-size-titulo);
-    font-weight: var(--font-weight-titulo);
+    font-size: var(--font-size-titulo-servicos);
+    font-weight: var(--font-weight-titulo-servicos);
     color: var(--cor-primaria);
 }
 .sub_um_servicos{
     font-family: var(--font);
-    font-size: var(--font-size-sub);
-    font-weight: var(--font-weight-sub);
+    font-size: var(--font-size-sub-servicos);
+    font-weight: var(--font-weight-sub-servicos);
     color: var(--cor-texto);
 }
 
 .paragrafos_um_servicos{
     font-family: var(--font);
-    font-size: var(--font-size-paragrafo);
-    font-weight: var(--font-weight-paragrafo);
+    font-size: var(--font-size-paragrafo-servicos);
+    font-weight: var(--font-weight-paragrafo-servicos);
     color: var(--cor-texto);
 }

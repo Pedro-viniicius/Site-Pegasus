@@ -14,7 +14,7 @@ import whats from '../assets/whats.svg';
 import face from '../assets/facebook.svg';
 import insta from '../assets/instagram.svg';
 import { Link } from 'react-router-dom';
-
+import Pater from '../assets/PATTERNTop.svg'
 export default function Contatos(){
     return(
         <div className="Contatos">
@@ -64,6 +64,9 @@ export default function Contatos(){
                                 </li>
                                 </ul>
                             </div>
+                </section>
+                <section className="seessao_cinco">
+                    <img src={Pater} alt="PATTERN" />
                 </section>
                 <footer className="rodape">
                 <div className="container_rodape">

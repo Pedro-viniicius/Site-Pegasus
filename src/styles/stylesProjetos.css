@@ -27,7 +27,7 @@ html, body {
         --font-weight-titulo: 400;
         --font-weight-sub: 600; 
         --font-weight-paragrafo: 200;
-        --height-section: 80vh;
+        --height-section: 120vh;
         --gap-entreimgetexto: 5%;
     }
 }
