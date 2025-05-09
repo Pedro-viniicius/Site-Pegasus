@@ -1,20 +1,26 @@
 import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-
+import SobreNos from './pages/SobreNos';
+import Servicos from './pages/Servicos';
 
 const App: React.FC = () => {
   return (
     <div 
       className="App"
       style={{
-        backgroundColor: 'black', // Fundo preto
-        minHeight: '100vh',       // Cobrir toda a altura da viewport
-        width: '100%',            // Largura total
-        margin: 0,                // Remover margens padrão
-        padding: 0               // Remover paddings padrão
+        backgroundColor: 'white',
+        minHeight: '100vh',
+        width: '100%',
+        margin: 0,
+        padding: 0
       }}
     >
-      <Home></Home>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/SobreNos" element={<SobreNos />} />
+        <Route path="/Servicos" element={<Servicos />} />
+      </Routes>
     </div>
   );
 }

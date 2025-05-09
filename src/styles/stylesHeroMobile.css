@@ -1,124 +1,149 @@
-@media (max-width: 500px){
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden; /* Garante que não haja scroll horizontal */
-}
+/* Import da fonte Manrope */
+@import url('https://fonts.googleapis.com/css2?family=Manrope :wght@400;500;600;700&display=swap');
 
-.Home {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-  font-family: 'Manrope', sans-serif;
-  width: 100%;
-  height: auto; /* Ajusta a altura para o conteúdo */
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  max-width: 500px; /* Limita a largura máxima */
-}
-.conteudo-principal {
-  width: 100%;
-  margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 0; /* Remove a margem interna */
-}
-.hero-container {
+@media (max-width: 500px) {
+
+  /* Variáveis globais dentro do media query para manter contexto específico */
+  :root {
+    --primary-color: #FF2127;      /* Vermelho */
+    --secondary-color: #EABB38;    /* Dourado claro */
+    --background-color: #000000;   /* Preto */
+    --text-color: #ffffff;         /* Branco */
+    --font-family: 'Manrope', sans-serif;
+    --menu-font-size: 15px;
+    --hero-padding-left: 18%;
+    --title-font-size: 25px;
+    --subtitle-font-size: 12px;
+    --max-page-width: 500px;
+  }
+
+  /* Reset básico */
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px; /* Garantia de base consistente */
+  }
+
+  /* Estilo principal da página Home */
+  .Home {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: var(--font-family);
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: var(--max-page-width);
+  }
+
+  /* Container centralizado */
+  .conteudo-principal {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  /* Hero Section */
+  .hero-container {
     background: url('../assets/BaneerMobile.svg') no-repeat center;
     background-size: cover;
     height: 115vh;
-    color: rgb(255, 255, 255);
+    color: var(--text-color);
     max-width: 100%;
     padding: 0;
     margin: 0;
     overflow: hidden;
   }
-  .main-nav{
+
+  /* Navegação principal */
+  .main-nav {
     width: 100%;
     padding-top: 2%;
     margin: 0;
   }
-  .container{
+
+  /* Container geral */
+  .container {
     width: 100%;
     padding: 0;
     margin: 0;
     gap: 4%;
-    justify-content:center;
+    justify-content: center;
     padding-left: 5%;
-    
   }
+
+  /* Seção de apresentação */
   .apresentacao-container {
     padding: 0;
     height: auto;
     margin: 0;
     width: 100%;
     overflow-x: hidden;
-
   }
+
   .apresentacao {
     padding: 0;
     margin: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Manrope', sans-serif;
-    padding-left: 18%;
-    
+    font-family: var(--font-family);
+    padding-left: var(--hero-padding-left);
   }
+
   .apresentacao h1 {
-    
     padding-top: 25%;
     margin: 0;
-    font-size: 50px;
+    font-size: var(--title-font-size);
     font-weight: 400;
-    color: #ffffff; 
-    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-family);
     width: 75%;
   }
-  .apresentacao h5{
-    
+
+  .apresentacao h5 {
     padding-top: 2%;
     padding-bottom: 3%;
     margin: 0;
-    font-size: 50px;
+    font-size: var(--subtitle-font-size);
     font-weight: 100;
-    color: #ffffff; 
-    font-family: 'Manrope', sans-serif;
+    color: var(--text-color);
+    font-family: var(--font-family);
   }
+
+  /* Menu de navegação */
   .menu-list {
-    list-style: disc; 
+    list-style: disc;
     text-decoration: none;
   }
-  .menu-item{
+
+  .menu-item {
     text-decoration: none;
-    
+    font-size: var(--menu-font-size);
+    font-family: var(--font-family);
   }
-  .logo{
+
+  .logo {
     width: 120px;
-    height:120px;
+    height: 120px;
   }
 
-  .menu_home{
+  .menu_home {
     text-decoration: none;
-    color: #af8c2a; 
+    color: var(--secondary-color);
     font-weight: 500;
-    font-size: 15px;
-    transition: color 0.3s ease; 
-    font-family: 'Manrope', sans-serif;
+    font-size: var(--menu-font-size);
+    transition: color 0.3s ease;
+    font-family: var(--font-family);
+  }
 
+  .menu_home:hover {
+    color: var(--primary-color);
   }
-  .menu-item{
-    font-size: 15px;
-    font-family: 'Manrope', sans-serif;
-  }
-  .menu_home:hover{
-    color: #ff0000; 
-  }
+
   .menu-link:hover {
-      color: #ff0000; 
-  }
-  .apresentacao h1{
-    font-size: 25px;
-  }
-  .apresentacao h5{
-    font-size: 12px;
+    color: var(--primary-color);
   }
 }

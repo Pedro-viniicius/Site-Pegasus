@@ -3,6 +3,7 @@ import IconeInsta from '../assets/instagram.svg'
 import IconeWhatsapp from '../assets/whats.svg'
 import logo from '../assets/LOGOTIPOVctor.svg'
 import '../styles/stylesCabecalho.css'
+import { Link } from 'react-router-dom';
 
 export default function cabecalho() {
     return (
@@ -13,7 +14,7 @@ export default function cabecalho() {
                 <div className="menu-container">
                     <ul style={{ listStyle: 'none' }} className="menu-list">
                         <li className="menu-item"><a href="#" className="link-home">HOME</a></li>
-                        <li className="menu-item"><a href="#" className="menu-link">SOBRE NÓS</a></li>
+                        <li className="menu-item"><Link to="/SobreNos" className="menu-link">SOBRE NÓS</Link></li>
                         <li className="menu-item"><a href="#" className="menu-link">SERVIÇOS</a></li>
                         <li className="menu-item"><a href="#" className="menu-link">PROJETOS</a></li>
                         <li className="menu-item"><a href="#" className="menu-link">CONTATO</a></li>

@@ -1,225 +1,288 @@
-@media (max-width: 500px){
-    html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
+
+
+@media (max-width: 500px) {
+    @import url('https://fonts.googleapis.com/css2?family=Manrope :wght@400;500;600;700&display=swap');
+
+    :root {
+      --primary-color: #FF2127;      /* Vermelho principal */
+      --secondary-color: #EABB38;    /* Dourado secundário */
+      --bg-color-dark: #000000;      /* Fundo preto */
+      --bg-color-light: #ffffff;     /* Fundo branco */
+      --bg-footer: #2a2a2a;          /* Cinza escuro do rodapé */
+      --text-color-dark: #000000;
+      --text-color-light: #ffffff;
+      --font-family: 'Manrope', sans-serif;
+  
+      --title-size-h1: 14px;
+      --title-size-h2: 25.5px;
+      --title-size-projeto-h1: 15px;
+      --title-size-projeto-h2: 35px;
+      --title-size-projeto-h3: 15px;
+  
+      --footer-font-size: 10px;
+      --card-padding-top: 15%;
+      --card-padding-left: 5em;
+      --logo-size: 100px;
+  
+      --section-padding-horizontal: 10%;
+      --section-max-width: 326.061px;
+      --image-border-radius: 50px;
     }
+  
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      font-family: var(--font-family);
+    }
+  
     .Home {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-        font-family: 'Manrope', sans-serif;
-        width: 100%;             
-        height: 3329px;          
-        margin: 0;                
-        padding: 0;               
-        box-sizing: border-box;   
-        max-width: 500px;
+      background-color: var(--bg-color-dark);
+      color: var(--text-color-light);
+      font-family: var(--font-family);
+      width: 100%;
+      height: 3329px;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      max-width: var(--section-max-width);
     }
-    .conteudo-principal{
-        width: 100%;
-        margin: 0 auto; /* centraliza */
-        padding: 0; /* margem interna para não colar na borda */        
+  
+    .conteudo-principal {
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
     }
-    .cabecalho{
-        min-height: 60px;
+  
+    .cabecalho {
+      min-height: 60px;
     }
-
-    .sessao_dois{
-        display:flex; 
-        background-color: white;
-        flex-direction:column;
-        width: 100%;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        overflow: hidden; /* Garante que nada vaze */
+  
+    /* =================== SESSÃO DOIS =================== */
+    .sessao_dois {
+      display: flex;
+      background-color: var(--bg-color-light);
+      flex-direction: column;
+      width: 100%;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
     }
-    .sobre_pegasus{
-        padding-left: 10%;
-        height: 100%;
-        width: 100%;
-        text-align:start;
-        max-width: 80%;
+  
+    .sobre_pegasus {
+      padding-left: var(--section-padding-horizontal);
+      height: 100%;
+      width: 100%;
+      text-align: start;
+      max-width: 80%;
     }
-    .sobre_pegasus h1{
-        padding: 0;
-        margin-top: 15%;
-        font-size: 14px;
-        font-weight: 300;
-        color: #ff2127;
-        letter-spacing: 1px;
-        margin-bottom: 10px;
-        font-family: 'Manrope', sans-serif;
+  
+    .sobre_pegasus h1 {
+      padding: 0;
+      margin-top: 15%;
+      font-size: var(--title-size-h1);
+      font-weight: 300;
+      color: var(--primary-color);
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      font-family: var(--font-family);
     }
-    .sobre_pegasus h2{
-        padding: 0;
-        margin: 0;
-        font-size: 25.5px;
-        font-weight: 700;
-        color: #000;
-        margin-bottom: 20px;
-        font-family: 'Manrope', sans-serif;
+  
+    .sobre_pegasus h2 {
+      padding: 0;
+      margin: 0;
+      font-size: var(--title-size-h2);
+      font-weight: 700;
+      color: var(--text-color-dark);
+      margin-bottom: 20px;
+      font-family: var(--font-family);
     }
+  
     .imagem-girocoptero {
-        padding-bottom: 0;
-        padding-right: 0; /* Remova o padding que pode causar overflow */
-        margin: 0 auto; /* Centraliza a imagem */
-        height: auto; /* Ajusta a altura automaticamente */
-        max-width: 100%; /* Garante que a largura não ultrapasse o contêiner */
-        align-items: center;
+      padding-bottom: 0;
+      padding-right: 0;
+      margin: 0 auto;
+      height: auto;
+      max-width: 100%;
+      align-items: center;
     }
-    .sessao_tres{
-        background-color: #ffffff;
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-        height: 185vh;
-
+  
+    /* =================== SESSÃO TRES =================== */
+    .sessao_tres {
+      background-color: var(--bg-color-light);
+      max-width: 100%;
+      padding: 0;
+      margin: 0;
+      height: 185vh;
     }
-    .projetos{
-        display: flex;
-        flex-direction: column;
-        max-width: 100%;
-        padding: 0;
-        align-items: center;
-        height: 185vh;
-        max-height: 1000px;
+  
+    .projetos {
+      display: flex;
+      flex-direction: column;
+      max-width: 100%;
+      padding: 0;
+      align-items: center;
+      height: 185vh;
+      max-height: 1000px;
     }
-    .imagensProjetos{
-        display: flex;
-        flex-direction: column;
-        width: 326.061px;
-        height: 244.545px;
-        gap: 5em;
+  
+    .imagensProjetos {
+      display: flex;
+      flex-direction: column;
+      width: var(--section-max-width);
+      height: 244.545px;
+      gap: 5em;
     }
-    .imagensProjetos img{
-        width: 100%;
-        border-radius: 50px;
+  
+    .imagensProjetos img {
+      width: 100%;
+      border-radius: var(--image-border-radius);
     }
-    .textoArea{
-        padding: 0;
-        margin: 0;
-        text-align:start;
+  
+    .textoArea {
+      padding: 0;
+      margin: 0;
+      text-align: start;
     }
-    .textoArea h1{
-        padding: 0;
-        margin: 0;
-        font-size: 15px;
-        font-weight: 300;
-        color: #ff2127;
-        margin-bottom: 2%;
-        font-family: 'Manrope', sans-serif;
+  
+    .textoArea h1 {
+      padding: 0;
+      margin: 0;
+      font-size: var(--title-size-projeto-h1);
+      font-weight: 300;
+      color: var(--primary-color);
+      margin-bottom: 2%;
+      font-family: var(--font-family);
     }
-    .textoArea h2{
-        padding: 0;
-        margin: 0;
-        font-size: 35px;
-        font-weight: 700;
-        color: #000;
-        font-family: 'Manrope', sans-serif;
+  
+    .textoArea h2 {
+      padding: 0;
+      margin: 0;
+      font-size: var(--title-size-projeto-h2);
+      font-weight: 700;
+      color: var(--text-color-dark);
+      font-family: var(--font-family);
     }
-    .textoArea h3{
-        padding: 0;
-        margin: 0;
-        font-size: 15px;
-        font-weight: 600;
-        color: #000;
-        font-family: 'Manrope', sans-serif;
+  
+    .textoArea h3 {
+      padding: 0;
+      margin: 0;
+      font-size: var(--title-size-projeto-h3);
+      font-weight: 600;
+      color: var(--text-color-dark);
+      font-family: var(--font-family);
     }
-    .sessao_quatro{
-        display: flex; 
-        flex-direction: column;
-        background-color: rgb(0, 0, 0);
-        max-width:100%;
-        height: 170vh;
-        padding:0;
+  
+    /* =================== SESSÃO QUATRO =================== */
+    .sessao_quatro {
+      display: flex;
+      flex-direction: column;
+      background-color: var(--bg-color-dark);
+      max-width: 100%;
+      height: 170vh;
+      padding: 0;
     }
-    .cards_wrapper{
-        width: 60%;
-        max-width: 400px;
-        padding-top: 15%;
-        padding-left: 5em;
+  
+    .cards_wrapper {
+      width: 60%;
+      max-width: 400px;
+      padding-top: var(--card-padding-top);
+      padding-left: var(--card-padding-left);
     }
-    .seessao_cinco{
-        max-height: 41px;
-        padding: 0;
-        margin: 0;
-        background: #2a2a2a;
+  
+    /* =================== SESSÃO CINCO =================== */
+    .seessao_cinco {
+      max-height: 41px;
+      padding: 0;
+      margin: 0;
+      background: var(--bg-footer);
     }
-    .seessao_cinco img{
-        min-height: 40px;
+  
+    .seessao_cinco img {
+      min-height: 40px;
     }
-    .rodape{
-        max-width:100%;
-        padding: 0;
-        min-height: 400px;
-        display: flex;
-        flex-direction: column;
-        gap: 5em;
-        font-size:10px;
+  
+    /* =================== RODAPÉ =================== */
+    .rodape {
+      max-width: 100%;
+      padding: 0;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      gap: 5em;
+      font-size: var(--footer-font-size);
     }
-    .container_rodape{
-        max-width:100%;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
+  
+    .container_rodape {
+      max-width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
     }
-    .conteiner-rodape-dois{
-        margin: 0;
-        padding: 0;
-        width: 100%;
+  
+    .conteiner-rodape-dois {
+      margin: 0;
+      padding: 0;
+      width: 100%;
     }
+  
     .footer-top {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;      /* centraliza cada um */
-        gap: 2em;
-        padding-right: 10%;
-        width: auto;
-      }
-    .contato-item{
-        font-size:10px;
-        width: 100%;
-        margin: 1em;;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2em;
+      padding-right: 10%;
+      width: auto;
     }
-    .linha-topo{
-        display: flex;
-        justify-content: space-between;
-        padding: 0;
-        margin-left: 4%;
-        margin-right: 4%;
+  
+    .contato-item {
+      font-size: var(--footer-font-size);
+      width: 100%;
+      margin: 1em;
     }
-    .redes-sociais{
-        padding-bottom: 2em;
-        font-size:17x;
-        
+  
+    .linha-topo {
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      margin-left: 4%;
+      margin-right: 4%;
     }
-    .contato{
-        padding: 0;
+  
+    .redes-sociais {
+      padding-bottom: 2em;
+      font-size: 17px;
     }
-
-    .logo img{
-        height: 100px;
-        width: 100px;
-        padding:0;
+  
+    .contato {
+      padding: 0;
     }
-
-    .copyright{
-        padding: 0;
-        margin:0;
+  
+    .logo img {
+      height: var(--logo-size);
+      width: var(--logo-size);
+      padding: 0;
     }
-    .itens{
-        color: #af8c1b
+  
+    .copyright {
+      padding: 0;
+      margin: 0;
     }
+  
+    .itens {
+      color: var(--secondary-color);
+    }
+  
     .nosso-site ul {
-        display: flex; /* Certifique-se de que a lista usa flexbox */
-        flex-direction: column; /* Para listas verticais */
-        gap: 1em; /* Espaçamento entre os itens */
-        padding: 0;
-        margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      padding: 0;
+      margin: 0;
     }
-
-}
+  }
