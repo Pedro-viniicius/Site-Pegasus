@@ -133,7 +133,7 @@ html, body {
         --font-weight-titulo: 400;
         --font-weight-sub: 600; 
         --font-weight-paragrafo: 200;
-        --height-section: 100vh;
+        --height-section: 65vh;
         --gap-entreimgetexto: 4%;
     }
     .projetos-section-um{
