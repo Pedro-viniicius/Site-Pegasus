@@ -16,14 +16,18 @@ html, body {
     --gap: 6%;
     --tamanho-fonte: 1rem;
   }
+  
 
-  @media (min-width: 2529.330px){
+
+@media (min-width: 2529.330px){
     :root{
-        --tamanho-fonte: 1.15rem;
+        --tamanho-fonte: 1.1rem;
     }
   }
+
+
 .SobreNos{
-    background-color: var(--cor-fundo);
+    background-color: black;
     color: var(--cor-fundo);
     font-family: 'Manrope', sans-serif;
     width: 100%;                
@@ -34,6 +38,7 @@ html, body {
     overflow-wrap: break-word;
 }
 .conteudo-principal_sobre{
+    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -53,6 +58,7 @@ html, body {
     gap: var(--gap);
     margin-top: 6%;
 }
+
 .titulo_um{
     font-size: var(--tamanho-fonte);
     font-weight: 100;
@@ -223,4 +229,190 @@ html, body {
     padding: 0;
     text-align:start;
     font-family: var(--font) ;
+}
+@media (max-width: 500px){
+    :root{
+        --tamanho-fonte: 0.8rem;
+
+    }
+    .sessao_umm{
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0;
+        padding: 0;
+        gap: var(--gap);
+        margin-top: 15%;
+    }
+    
+    .titulo_um{
+        font-size: var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-primaria);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    
+    .nossa_historia{
+        display: flex;
+        flex-direction: column;
+        gap:5%;
+        width: 100%;
+    }
+    
+    .sub_um{
+        margin: 0;
+        font-size: 2em;
+        height: 10%;
+        width: 100%;
+        color: var(--cor-texto);
+    
+    }
+    .paragrafos_um{
+        font-size: var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-texto);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    
+    .sessao_doiss{
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0;
+        padding: 0;
+        gap: var(--gap);
+        margin-top: 6%;
+        background-color: var(--cor-fundo);
+    }
+    
+    .titulo_dois{
+        font-size: var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-primaria);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    .o_que_nos_move{
+        display: flex;
+        flex-direction: column;
+        gap:3%;
+        width: 100%;
+    }
+    .sub_dois{
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        height: 10%;
+        width: 100%;
+        color: var(--cor-texto);
+    
+    }
+    
+    .paragrafos_dois{
+        font-size:  var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-texto);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    
+    .sessao_tress{
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0;
+        padding: 0;
+        gap: var(--gap);
+        margin-top: 6%;
+        background-color: var(--cor-fundo);
+    }
+    
+    .titulo_tres{
+        font-size:  var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-primaria);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    .visao{
+        display: flex;
+        flex-direction: column;
+        gap:3%;
+        width: 100%;
+    }
+    .sub_tres{
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        height: 10%;
+        width: 100%;
+        color: var(--cor-texto);
+    
+    }
+    
+    .paragrafos_tres{
+        font-size: var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-texto);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    
+    .sessao_quatroo{
+        display: flex;
+        flex-direction:column-reverse;
+        margin: 0;
+        padding: 0;
+        gap: var(--gap);
+        margin-top: 6%;
+        margin-bottom: 8%;
+        background-color: var(--cor-fundo);
+    }
+    
+    .titulo_quatro{
+        font-size:  var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-primaria);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
+    .PEGASUS_sobre{
+        display: flex;
+        flex-direction: column;
+        gap:1.5%;
+        width: 100%;
+        
+    }
+    .sub_quatro{
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        height: 10%;
+        width: 100%;
+        color: var(--cor-texto);
+    
+    }
+    
+    .paragrafos_quatro{
+        font-size: var(--tamanho-fonte);
+        font-weight: 100;
+        color: var(--cor-texto);
+        margin: 0;
+        padding: 0;
+        text-align:start;
+        font-family: var(--font) ;
+    }
 }

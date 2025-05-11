@@ -11,7 +11,7 @@ const App: React.FC = () => {
     <div 
       className="App"
       style={{
-        backgroundColor: 'white',
+        backgroundColor: 'black',
         minHeight: '100vh',
         width: '100%',
         margin: 0,

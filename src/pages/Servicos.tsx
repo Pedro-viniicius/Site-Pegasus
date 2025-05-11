@@ -1,5 +1,6 @@
 import HeroSection from "../components/HeroSection";
-import servicos_img from "../assets/Servicos-componet.svg";
+import servicosImgDesktop from "../assets/Servicos-componet.svg";
+import servicosImgMobile from "../assets/Servicos-componet-mobile.svg";
 import '../styles/stylesServicos.css';
 import helice from "../assets/helice.svg";
 import manutencao from "../assets/manutencao.svg";
@@ -13,9 +14,24 @@ import face from '../assets/facebook.svg';
 import insta from '../assets/instagram.svg';
 import { Link } from "react-router-dom";
 import Pater from '../assets/PATTERNTop.svg'
+import { useState, useEffect } from "react";
 
 export default function Servicos() {
-    console.log("Servicos component rendered");
+  const [imgSrc, setImgSrc] = useState(servicosImgDesktop);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        setImgSrc(servicosImgMobile);
+      } else {
+        setImgSrc(servicosImgDesktop);
+      }
+    };
+
+    handleResize(); // chamar uma vez ao montar
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   return (
 
     <div className="Servicos">
@@ -23,7 +39,7 @@ export default function Servicos() {
       <div className="conteudo-principal-servicos">
         <section className="servicos-section-um">
           <div>
-            <img src={servicos_img} alt="servicos_img" />
+            <img src={imgSrc} alt="servicos_img" />
           </div>
         </section>
 
