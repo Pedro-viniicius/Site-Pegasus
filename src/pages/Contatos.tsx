@@ -1,5 +1,7 @@
 import HeroSection from "../components/HeroSection";
-import contatos_img from "../assets/Component_contatos.svg";
+import contatosImgDesktop from "../assets/Component_contatos.svg";
+import contatosImgMobile from "../assets/Component_contatos_mobile.svg";
+import { useState, useEffect } from "react";
 import "../styles/stylesContatos.css";
 import local_contatos from "../assets/Local_contatos.svg";
 import tel_contato from "../assets/Tel_contatos.svg";
@@ -16,13 +18,28 @@ import insta from '../assets/instagram.svg';
 import { Link } from 'react-router-dom';
 import Pater from '../assets/PATTERNTop.svg'
 export default function Contatos(){
+    const [imgSrc, setImgSrc] = useState(contatosImgDesktop);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        setImgSrc(contatosImgMobile);
+      } else {
+        setImgSrc(contatosImgDesktop);
+      }
+    };
+
+    handleResize(); // chamar uma vez ao montar
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
     return(
         <div className="Contatos">
         <HeroSection />
-            <div className="conteudo-principal_contatos">
+            <div className="conteudo-principal_contatoss">
                 <section className="contatos-section-um">
                     <div>
-                        <img src={contatos_img} alt="contatos_img" />
+                        <img src={imgSrc} alt="contatos_img" />
                     </div>
                 </section>
                 <section className="contatos-section-dois">
@@ -98,7 +115,7 @@ export default function Contatos(){
                                 <ul>
                                 <li> <Link to="/SobreNos" >Sobre nós</Link ></li>
                                 <li> <Link to="/Servicos" >Serviços</Link></li>
-                                <li> <Link to="/Projetos" >Projetos</Link></li>
+                                <li> <Link to="/contatos" >contatos</Link></li>
                                 <li> <Link to="/Contatos">Contato</Link></li>
                                 </ul>
                             </div>
