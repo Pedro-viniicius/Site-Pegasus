@@ -137,7 +137,7 @@ export default function Projetos(){
                                 <h3>Nosso Site</h3>
                                 <ul>
                                 <li> <Link to="/SobreNos" >Sobre nós</Link ></li>
-                                <li> <Link to="/projetos" >Serviços</Link></li>
+                                <li> <Link to="/Servicos" >Serviços</Link></li>
                                 <li><Link to="/Projetos" >Projetos</Link></li>
                                 <li><Link to="/Contatos">Contato</Link></li>
                                 </ul>
