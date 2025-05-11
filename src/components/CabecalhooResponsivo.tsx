@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Cabecalho from "./cabecalho";
-import CabecalhoMobile from "./cabecalhoMobile";
+import CabecalhoMobile from './cabecalhoMobile';
 
 const CabecalhoResponsivo = () => {
   const [isMobile, setIsMobile] = useState(false);

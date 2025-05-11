@@ -3,14 +3,13 @@ import IconeFacebook from '../assets/facebook.svg';
 import IconeInsta from '../assets/instagram.svg';
 import IconeWhatsapp from '../assets/whats.svg';
 import logo from '../assets/logo_sobre_nos.svg';
-import logoMobile from '../assets/LOGOTIPO_mobile.svg';
-import menuIcon from '../assets/menuMobile.svg';
 import Saiba_Mais from '../components/buttonSaibaMais';
 import '../styles/stylesCabecalho.css';
 import '../styles/stylesCabecalhoMobile.css';
 import '../styles/stylesHero.css';
 import '../styles/stylesHeroMobile.css';
 import { Link } from 'react-router-dom';
+import CabecalhoMobile from './cabecalhoMobile';
 
 const HeroSection = () => {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 500);
@@ -25,12 +24,7 @@ const HeroSection = () => {
     <div className="hero-container">
       <div className="main-nav">
         {isMobile ? (
-          <div className="nav-inner">
-            <img src={logoMobile} className="logo-mobile" alt="logo" />
-            <button className="menu-button" aria-label="Abrir menu">
-              <img src={menuIcon} alt="Menu" />
-            </button>
-          </div>
+          <CabecalhoMobile />
         ) : (
           <nav className="navbar">
             <div className="container">
