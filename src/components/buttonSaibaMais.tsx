@@ -1,17 +1,17 @@
 import '../styles/stylesButtonSaibaMais.css';
 import Vector from '../assets/Seta2.svg';
+import { Link } from 'react-router-dom';
 
 export default function Saiba_Mais({ 
   variant = "", 
   iconVariant = Vector, 
-  titulo = "O que esse botao faz" 
+  titulo = "O que esse botao faz", 
+  to = "/SobreNos" // permite customizar o destino
 }) {
   return (
-    <a 
+    <Link 
       className={`button_saibamais ${variant}`} 
-      href='../pages/SobreNos/index'  // Atualize para o caminho correto
-      target="_blank" 
-      rel="noopener noreferrer"
+      to={to}
     >
       {titulo}
       <img 
@@ -19,6 +19,6 @@ export default function Saiba_Mais({
         alt="Seta" 
         className="vector-icon"
       />
-    </a>
+    </Link>
   );
 }
