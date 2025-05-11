@@ -1,7 +1,10 @@
 import HeroSection from "../components/HeroSection";
-import projetos_img from "../assets/Component_projetos.svg";
+import projetosImgDesktop from "../assets/Component_projetos.svg";
+import projetosImgMobile from "../assets/Component_projetos_mobile.svg";
+import { useState, useEffect } from "react";
 import "../styles/stylesProjetos.css";
 import gradeprojetos from "../assets/gradeprojetos.svg";
+import gradeprojetosMobile from "../assets/gradeprojetos_mobile.svg";
 import logo from '../assets/LOGOTIPO_roda_pe.svg';
 import email from '../assets/wpf_message.svg';
 import local from '../assets/mdi_location.svg';
@@ -13,19 +16,50 @@ import { Link } from "react-router-dom";
 import Pater from '../assets/PATTERNTop.svg'
 
 export default function Projetos(){
+  const [imgSrc, setImgSrc] = useState(projetosImgDesktop);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        setImgSrc(projetosImgMobile);
+      } else {
+        setImgSrc(projetosImgDesktop);
+      }
+    };
+
+    handleResize(); // chamar uma vez ao montar
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const [imgSrcc, setImgSrcc] = useState(gradeprojetos);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth <= 500) {
+        setImgSrcc(gradeprojetosMobile);
+      } else {
+        setImgSrcc(gradeprojetos);
+      }
+    };
+
+    handleResize(); // chamar uma vez ao montar
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
     return(
         <div className="Projetos">
             <HeroSection />
-            <div className="conteudo-principal_projetos">
+            <div className="conteudo-principal_projetoss">
                 <section className="projetos-section-um">
                     <div>
-                        <img src={projetos_img} alt="projetos_img" />
+                        <img src={imgSrc} alt="projetos_img" />
                     </div>
                 </section>
 
                 <section className="projetos-section-dois">
                 <div className="imgProjetos">
-                  <img src={gradeprojetos} alt="gradeprojetos" />
+                  <img src={imgSrcc} alt="gradeprojetos" />
                 </div>
                 <div className="PROJETO_MALIBU">
                   <div>
@@ -49,7 +83,7 @@ export default function Projetos(){
               </section>
               <section className="projetos-section-doiss">
                 <div className="imgProjetos">
-                  <img src={gradeprojetos} alt="gradeprojetos" />
+                  <img src={imgSrcc} alt="gradeprojetos" />
                 </div>
                 <div className="PROJETO_MALIBU">
                   <div>
@@ -103,7 +137,7 @@ export default function Projetos(){
                                 <h3>Nosso Site</h3>
                                 <ul>
                                 <li> <Link to="/SobreNos" >Sobre nós</Link ></li>
-                                <li> <Link to="/Servicos" >Serviços</Link></li>
+                                <li> <Link to="/projetos" >Serviços</Link></li>
                                 <li><Link to="/Projetos" >Projetos</Link></li>
                                 <li><Link to="/Contatos">Contato</Link></li>
                                 </ul>

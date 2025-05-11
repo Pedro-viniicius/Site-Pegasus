@@ -58,8 +58,9 @@ html, body {
 
 }
 
-  .conteudo-principal-projetos{
+.conteudo-principal_projetoss{
     display: flex;
+    background-color: rgb(255, 255, 255);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -121,4 +122,70 @@ html, body {
     font-size: var(--font-size-paragrafo);
     font-weight: var(--font-weight-paragrafo);
     color: var(--cor-texto);
+}
+
+@media (max-width: 500px){
+
+    :root{
+        --font-size-titulo:0.8em;
+        --font-size-sub:1.5em;
+        --font-size-paragrafo:0.6em;
+        --font-weight-titulo: 400;
+        --font-weight-sub: 600; 
+        --font-weight-paragrafo: 200;
+        --height-section: 100vh;
+        --gap-entreimgetexto: 4%;
+    }
+    .projetos-section-um{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4%;
+        height: 25vh;
+    }
+    
+    .projetos-section-dois{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:var(--gap-entreimgetexto);
+        height: var(--height-section);
+    
+    }
+    .projetos-section-doiss{
+        display: flex;
+        flex-direction:column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap:var(--gap-entreimgetexto);
+        height: var(--height-section);
+    
+    }
+    .PROJETO_MALIBU{
+        display: flex;
+        flex-direction: column;
+        width:50%;
+      }
+    .titulo_um_projetos{
+        font-family: var(--font);
+        font-size: var(--font-size-titulo);
+        font-weight: var(--font-weight-titulo);
+        color: var(--cor-primaria);
+    }
+    .sub_um_projetos{
+        font-family: var(--font);
+        font-size: var(--font-size-sub);
+        font-weight: var(--font-weight-sub);
+        color: var(--cor-texto);
+    }
+    
+    .paragrafos_um_projetos{
+        font-family: var(--font);
+        font-size: var(--font-size-paragrafo);
+        font-weight: var(--font-weight-paragrafo);
+        color: var(--cor-texto);
+    }
+    
 }
