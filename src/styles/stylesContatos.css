@@ -124,7 +124,7 @@ a.item-ultimos{
 
 @media (min-width: 500px) {
 :root{
-    --font-size-titulo-contato:1.8em;
+    --font-size-titulo-contato:1em;
     --font-size-link-contato:0.5em;
     --weight-titulo-cotato: 1000;
     --weight-link: 400;
