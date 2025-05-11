@@ -129,7 +129,7 @@ html, body {
     :root{
         --font-size-titulo:0.8em;
         --font-size-sub:1.5em;
-        --font-size-paragrafo:0.6em;
+        --font-size-paragrafo:0.7em;
         --font-weight-titulo: 400;
         --font-weight-sub: 600; 
         --font-weight-paragrafo: 200;
@@ -148,7 +148,7 @@ html, body {
     .projetos-section-dois{
         display: flex;
         flex-direction:column-reverse;
-        justify-content: center;
+        justify-content:start;
         align-items: center;
         gap:var(--gap-entreimgetexto);
         height: var(--height-section);
@@ -157,7 +157,7 @@ html, body {
     .projetos-section-doiss{
         display: flex;
         flex-direction:column-reverse;
-        justify-content: center;
+        justify-content:start;
         align-items: center;
         gap:var(--gap-entreimgetexto);
         height: var(--height-section);
@@ -166,7 +166,9 @@ html, body {
     .PROJETO_MALIBU{
         display: flex;
         flex-direction: column;
-        width:50%;
+        justify-content: center;
+        align-items: start;
+        width:55%;
       }
     .titulo_um_projetos{
         font-family: var(--font);
