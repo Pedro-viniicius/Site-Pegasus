@@ -15,6 +15,19 @@
     --margin-links:5%;
 
   }
+
+  @media (min-width: 500px) {
+    :root{
+        --font-size-titulo-contato:1em;
+        --font-size-link-contato:0.5em;
+        --weight-titulo-cotato: 1000;
+        --weight-link: 400;
+        --gapEntreIconeEtexto: 5%;
+        --heightSectionDois: 65vh;
+        --margin-links:6%;
+    }
+        
+    }
   @media (min-width: 1520.8px) {
     :root{
         --font-size-titulo-contato:3em;
@@ -122,15 +135,4 @@ a.item-ultimos{
     padding-top: 2%;
 }
 
-@media (min-width: 500px) {
-:root{
-    --font-size-titulo-contato:1em;
-    --font-size-link-contato:0.5em;
-    --weight-titulo-cotato: 1000;
-    --weight-link: 400;
-    --gapEntreIconeEtexto: 5%;
-    --heightSectionDois: 65vh;
-    --margin-links:6%;
-}
-    
-}
+
