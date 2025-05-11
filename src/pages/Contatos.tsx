@@ -115,7 +115,7 @@ export default function Contatos(){
                                 <ul>
                                 <li> <Link to="/SobreNos" >Sobre nós</Link ></li>
                                 <li> <Link to="/Servicos" >Serviços</Link></li>
-                                <li> <Link to="/contatos" >contatos</Link></li>
+                                <li><Link to="/Projetos" >Projetos</Link></li>
                                 <li> <Link to="/Contatos">Contato</Link></li>
                                 </ul>
                             </div>
