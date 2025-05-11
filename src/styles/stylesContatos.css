@@ -17,13 +17,23 @@
   }
 @media (min-width: 500px) {
 :root{
-    --font-size-titulo-contato:0.8em;
+    --font-size-titulo-contato:1.5em;
     --font-size-link-contato:0.5em;
-    --weight-titulo-cotato: 1000;
+    --weight-titulo-cotato: 600;
     --weight-link: 400;
     --gapEntreIconeEtexto: 5%;
     --heightSectionDois: 50vh;
     --margin-links:6%;
+}
+
+.contatos-section-dois{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    height: var(--heightSectionDois);
+    width: 277.37;
+    height: 276.26;
 }
     
 }
@@ -59,6 +69,9 @@
         --heightSectionDois: 80vh;
         --margin-links:5%;
     }
+
+
+
 }
 .conteudo-principal_contatoss{
     display: flex;
