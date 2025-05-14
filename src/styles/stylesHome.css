@@ -29,16 +29,19 @@ body, html {
     padding: 0;
     margin: 0;
     background-color: #F5F5F5;
+    box-sizing: border-box;
 
 }
 
 .imagem-girocoptero {
-    height: 500px;
-    width: 500px;
+    height: 1000px; /* aumente conforme necessário */
+    width: 800px;  /* aumente proporcionalmente */
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 5%;
+    padding-right: 3%;
+    padding-bottom: 22%;
+    box-sizing: border-box;
 }
 @media (min-width: 2529.330px){
     .imagem-girocoptero{
@@ -208,23 +211,26 @@ body, html {
   }
   
   .sessao_quatro .icon img {
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
   }
   
   .sessao_quatro h3 {
     color: #F5F5F5;
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin: 0;
+    font-weight: 1200;
     font-family: 'Manrope', sans-serif;
   }
   
   .sessao_quatro p {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.5;
     max-width: 250px;
     font-family: 'Manrope', sans-serif;
+    padding: 0;
+    margin: 0;
   }
 
   .seessao_cinco {

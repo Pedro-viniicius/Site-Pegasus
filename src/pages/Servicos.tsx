@@ -53,7 +53,7 @@ export default function Servicos() {
                   </div>
                   <div>
                     <h2 className="sub_um_servicos">
-                    Venda de aeronaves
+                    Venda de aeronaves<br/>
                     de alto giro
                     </h2>
                   </div>

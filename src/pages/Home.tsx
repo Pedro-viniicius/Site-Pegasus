@@ -2,7 +2,7 @@ import React from 'react';
 import Saiba_Mais from "../components/buttonSaibaMais"
 import '../styles/stylesHome.css'
 import '../styles/stylesMobileHome.css'
-import girocopteros from '../assets/autogiro_sessao2.svg'
+import girocopteros from '../assets/autogiro_sessao2.png'
 import girocopteross from '../assets/Auto1.svg'
 import girocopterosss from '../assets/Auto2.svg'
 import vectorVermelho from '../assets/Seta.svg'
