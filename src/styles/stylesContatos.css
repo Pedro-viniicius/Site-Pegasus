@@ -17,13 +17,13 @@
   }
 @media (min-width: 500px) {
 :root{
-    --font-size-titulo-contato:0.6em;
-    --font-size-link-contato:0.5em;
+    --font-size-titulo-contato:20px;
+    --font-size-link-contato:10px;
     --weight-titulo-cotato: 600;
     --weight-link: 400;
     --gapEntreIconeEtexto: 5%;
-    --heightSectionDois: 50vh;
-    --margin-links:6%;
+    --heightSectionDois: 500px;
+    --margin-links:8%;
 }
 
 .contatos-section-dois{
@@ -100,6 +100,8 @@
     justify-content: center;
     align-items:center;
     height: var(--heightSectionDois);
+    width: 100%;
+
 }
 .Contatos-texto ul{
     list-style: none; /* Remove marcadores ou números */
@@ -108,7 +110,7 @@
     font-size: var(--font-size-titulo-contato);
     font-weight: var(--weight-titulo-cotato);
     font-family: var(--font);
-    width: 100%;
+    width: 80%;
 
 }
 .Contatos-texto li{
