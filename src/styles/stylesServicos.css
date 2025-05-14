@@ -106,6 +106,7 @@ html, body {
     font-size: var(--font-size-sub-servicos);
     font-weight: var(--font-weight-sub-servicos);
     color: var(--cor-texto);
+    margin: 0;
 }
 
 .paragrafos_um_servicos{
@@ -166,6 +167,7 @@ html, body {
         font-size: var(--font-size-sub-servicos);
         font-weight: var(--font-weight-sub-servicos);
         color: var(--cor-texto);
+        margin: 0;
     }
     
     .paragrafos_um_servicos{

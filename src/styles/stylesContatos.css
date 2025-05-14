@@ -17,7 +17,7 @@
   }
 @media (min-width: 500px) {
 :root{
-    --font-size-titulo-contato:1.5em;
+    --font-size-titulo-contato:0.6em;
     --font-size-link-contato:0.5em;
     --weight-titulo-cotato: 600;
     --weight-link: 400;
@@ -32,8 +32,7 @@
     justify-content: center;
     align-items:center;
     height: var(--heightSectionDois);
-    width: 277.37;
-    height: 276.26;
+
 }
     
 }
